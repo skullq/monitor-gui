@@ -25,25 +25,28 @@ uv venv
 uv pip install requests PyQt5
 ```
 
-## 2. 사용법
+## 2. Usage
 
-### 실행
+### Screenshot
+![Server Monitoring System](capture.PNG)
+
+### How to Run
 ```bash
-python monitor-gui-v2.py
-# 또는 uv를 통해 직접 실행
-uv run monitor-gui-v2.py
+python monitor-gui.py
+# Or run directly with uv
+uv run monitor-gui.py
 ```
 
-### 주요 기능
-1.  **서버 추가**: 상단의 IP와 Port 입력란에 정보를 입력하고 `추가` 버튼을 누릅니다. (IP 유효성 검사가 포함되어 있습니다.)
-2.  **서버 삭제**: 리스트에서 항목을 선택한 후 `삭제` 버튼을 누르거나 `Delete` 키를 누릅니다.
-3.  **모니터링 주기 변경**: 상단의 `간격` 버튼을 눌러 0.5s, 1.0s, 2.0s 중 선택할 수 있습니다.
-4.  **데이터 저장**: 추가된 서버 리스트는 `servers.json` 파일에 자동으로 저장되어 프로그램 재실행 시 유지됩니다.
 
-### 상태 표시 (색상 구분)
-- **초록색 (Green)**: 정상 (Status 200 등)
-- **빨간색 (Red)**: 접속 실패 (DOWN) 또는 에러 발생
-- **파란색 굵은 글씨 (Blue/Bold)**: 이전 응답과 비교하여 **데이터(Data)가 변경됨**을 감지했을 때 표시됩니다.
+### Key Features 
+-1. Add Server: Enter the IP and Port in the input fields at the top and click the Add button. (Includes IP validation.) 
+-2. Delete Server: Select an item from the list and click the Delete button or press the Delete key. 
+-3. Change Interval: Click the Interval button at the top to select 0.5s, 1.0s, or 2.0s. 
+-4. Data Persistence: The added server list is automatically saved to the servers.json file and persists across restarts.
+
+### Status Indicators (Color Code) 
+- Green: Normal (Status 200, etc.) 
+- Red: Connection failed (DOWN) or error occurred. 
+- Blue (Bold): Displayed when a change in Data is detected compared to the previous response.
 
 ---
-*Note: `monitor-gui-v2.py`가 최신 버전의 기능을 포함하고 있습니다.*
