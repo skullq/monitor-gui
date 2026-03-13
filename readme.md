@@ -1,27 +1,39 @@
 # Server Monitoring System (GUI)
 
 PyQt5를 이용한 실시간 서버 상태 모니터링 시스템입니다. HTTP 요청을 통해 서버의 응답 상태(Status), 응답 속도(Latency), 응답 데이터(Data)를 주기적으로 확인합니다.
+This is a real-time server status monitoring system built with PyQt5. It periodically checks the server's response status, latency, and data via HTTP requests.
 
 ## 1. 설치 및 환경 구성 (Using uv)
+## 1. Installation and Setup (Using uv)
 
 이 프로젝트는 Python 패키지 관리를 위해 `uv`를 사용하는 것을 권장합니다.
+This project recommends using `uv` for Python package management.
 
 ### 필수 패키지
 소스코드 실행을 위해 다음의 외부 라이브러리가 필요합니다:
 - `requests`: HTTP 요청 처리
 - `PyQt5`: GUI 구성
+### Required Packages
+The following external libraries are required to run the source code:
+- `requests`: For handling HTTP requests
+- `PyQt5`: For the GUI
 
 ### 설치 명령
 터미널에서 프로젝트 폴더로 이동 후 다음 명령어를 실행하여 가상환경을 생성하고 패키지를 설치하세요.
+### Installation Commands
+Navigate to the project folder in your terminal and run the following commands to create a virtual environment and install the packages.
 
 ```bash
 # 1. 가상환경 생성 (선택 사항)
+# 1. Create a virtual environment (optional)
 uv venv
 
 # 윈도우의 경우 가상환경 활성화
+# Activate the virtual environment (on Windows)
 .venv\Scripts\activate
 
 # 2. 패키지 설치
+# 2. Install packages
 uv pip install requests PyQt5
 ```
 
