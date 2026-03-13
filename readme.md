@@ -39,10 +39,10 @@ uv run monitor-gui.py
 
 
 ### Key Features 
--1. Add Server: Enter the IP and Port in the input fields at the top and click the Add button. (Includes IP validation.) 
--2. Delete Server: Select an item from the list and click the Delete button or press the Delete key. 
--3. Change Interval: Click the Interval button at the top to select 0.5s, 1.0s, or 2.0s. 
--4. Data Persistence: The added server list is automatically saved to the servers.json file and persists across restarts.
+- Add Server: Enter the IP and Port in the input fields at the top and click the Add button. (Includes IP validation.) 
+- Delete Server: Select an item from the list and click the Delete button or press the Delete key. 
+- Change Interval: Click the Interval button at the top to select 0.5s, 1.0s, or 2.0s. 
+- Data Persistence: The added server list is automatically saved to the servers.json file and persists across restarts.
 
 ### Status Indicators (Color Code) 
 - Green: Normal (Status 200, etc.) 
